@@ -37,6 +37,10 @@ class Task{
 	
 	
 }
+$task1=new Task('Zadanie1', 'Tytul zadania 1');
+$serializedTask=serialize($task1);
+$newTask=unserialize($serializedTask);
+var_dump($newTask);
 
 
 
